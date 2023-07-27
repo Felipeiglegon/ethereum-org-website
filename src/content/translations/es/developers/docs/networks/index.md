@@ -32,75 +32,85 @@ La mayoría de las redes de prueba utilizan un mecanismo de consenso de prueba d
 
 Los ETH no tienen un valor real en las redes de prueba; por lo tanto, no existe ningún mercado para los ETH de redes de prueba. Dado que necesita ETH para interactuar con Ethereum, la mayor parte de las personas adquieren ETH de redes de prueba en webs de tipo faucet. La mayoría de las faucets son aplicaciones web en las que puede introducir una dirección a la que pide que le envíen ETH.
 
-#### Arbitrum Rinkeby {#arbitrum-rinkeby}
+#### ¿Qué red de prueba debo usar?
 
-Una red de pruebas para [Arbitrum](https://arbitrum.io/).
+Las dos redes de prueba públicas que los desarrolladores de clientes mantienen actualmente son Sepolia y Goerli. Sepolia es una red para desarrolladores de aplicaciones y contratos para probar sus aplicaciones. La red Goerli permite a los desarrolladores de protocolos probar las actualizaciones de la red y permite a los participantes probar validadores en ejecución.
 
-##### Faucets Arbitrum Rinkeby
+#### Sepolia {#sepolia}
 
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Chainlink](https://faucets.chain.link/)
-- [Faucet Paradigm](https://faucet.paradigm.xyz/)
+**Sepolia es la red de prueba predeterminada recomendada para el desarrollo de aplicaciones**.
+La red Sepolia utiliza un conjunto de validadores autorizados. Es bastante nuevo, lo que significa que su estado e historia son bastante pequeños. Esto significa que la red se sincroniza rápidamente y que ejecutar un nodo requiere menos almacenamiento. Esto es útil para los usuarios que desean activar rápidamente un nodo e interactuar directamente con la red.
 
-#### Görli {#goerli}
+- Conjunto de validadores cerrado, controlado por el cliente y los equipos de prueba
+- Nueva red de prueba, menos aplicaciones implementadas que en otras redes de prueba
+- Rápida para sincronizar y ejecutar un nodo requiere un espacio mínimo en disco
 
-Una red de prueba con prueba de autoridad que funciona entre los clientes.
+##### Resources
 
-##### Faucet Görli
+- [Website](https://sepolia.dev/)
+- [GitHub](https://github.com/eth-clients/sepolia)
+- [Otterscan](https://sepolia.otterscan.io/)
+- [Etherscan](https://sepolia.etherscan.io)
 
-- [Faucet Görli](https://faucet.goerli.mudit.blog/)
-- [Faucet Chainlink](https://faucets.chain.link/)
+##### Faucets
+
+- [QuickNode Sepolia Faucet](https://faucet.quicknode.com/drip)
+- [Grabteeth](https://grabteeth.xyz/)
+- [PoW faucet](https://sepolia-faucet.pk910.de/)
+- [Sepolia faucet](https://faucet.sepolia.dev/)
+- [FaucETH](https://fauceth.komputing.org)
+- [Coinbase Wallet Faucet | Sepolia](https://coinbase.com/faucets/ethereum-sepolia-faucet)
+- [Alchemy Sepolia faucet](https://sepoliafaucet.com/)
+- [Infura Sepolia faucet](https://www.infura.io/faucet)
+
+#### Goerli _(long-term support)_ {#goerli}
+
+_Note: [la red de prueba de Goerli está obsoleta](https://ethereum-magicians.org/t/proposal-predictable-ethereum-testnet-lifecycle/11575/17) y será reemplazado por [Holesovice](https://github.com/eth-clients/holesovice) in 2023.  Considere migrar sus aplicaciones a Sepolia._
+
+Goerli es una red de pruebapara probar la validación y el staking. La red Goerli está abierta para los usuarios que deseen ejecutar un validador de testnet. Por lo tanto, los participantes que deseen probar las actualizaciones del protocolo antes de que se implementen en la red principal deben usar Goerli.
+
+- Conjunto de validadores abierto, los participantes pueden probar las actualizaciones de la red
+- Gran estado, útil para probar interacciones complejas de contratos inteligentes
+- Más tiempo para sincronizar y requiere más almacenamiento para ejecutar un nodo
+
+##### Resources
+
+- [Website](https://goerli.net/)
+- [GitHub](https://github.com/eth-clients/goerli)
+- [Etherscan](https://goerli.etherscan.io)
+
+##### Faucets
+
+- [QuickNode Goerli Faucet](https://faucet.quicknode.com/drip)
+- [Grabteeth](https://grabteeth.xyz/)
+- [PoW faucet](https://goerli-faucet.pk910.de/)
+- [Paradigm faucet](https://faucet.paradigm.xyz/)
 - [Alchemy Goerli Faucet](https://goerlifaucet.com/)
+- [All That Node Goerli Faucet](https://www.allthatnode.com/faucet/ethereum.dsrv)
+- [Coinbase Wallet Faucet | Goerli](https://coinbase.com/faucets/ethereum-goerli-faucet)
 
-#### Kintsugi {#kintsugi}
+Para iniciar un validador en la red de prueba de Goerli, use la plataforma de lanzamiento de ethstaker ["cheap goerli validator"](https://goerli.launchpad.ethstaker.cc/en/).
 
-Una red de pruebas de fusión para Ethereum.
+### Layer 2 testnets {#layer-2-testnets}
 
-##### Faucets Kintsugi
+[Layer 2 (L2)](/layer-2/) ies un término colectivo que describe un conjunto específico de soluciones de escalabilidad para Ethereum. Layer 2 es una cadena de bloques independiente que extiende Ethereum y hereda las garantías de seguridad de Ethereum. Las redes de prueba de Layer 2 generalmente están estrechamente vinculadas a las redes de prueba públicas de Ethereum.
 
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Kintsugi](https://faucet.kintsugi.themerge.dev/)
+#### Arbitrum Goerli {#arbitrum-goerli}
 
-#### Kovan {#kovan}
+Una red de prueba para [Arbitrum](https://arbitrum.io/).
 
-Una red de prueba con prueba de autoridad para aquellos clientes que emplean OpenEthereum.
+##### Faucets
 
-##### Faucets Kovan
+- [Chainlink faucet](https://faucets.chain.link/)
 
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Kovan](https://faucet.kovan.network/)
-- [Faucet Chainlink](https://faucets.chain.link/)
-- [Faucet Paradigm](https://faucet.paradigm.xyz/)
+#### Optimistic Goerli {#optimistic-goerli}
 
-#### Optimistic Kovan {#optimistic-kovan}
+Una red de prueba para [Optimism](https://www.optimism.io/).
 
-Una red de pruebas para [Optimism](https://www.optimism.io/).
+##### Faucets
 
-##### Faucets Optimistic Kovan
-
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Paradigm](https://faucet.paradigm.xyz/)
-
-#### Rinkeby {#rinkeby}
-
-Una red de prueba con prueba de autoridad para los que ejecutan clientes de Geth.
-
-##### Faucets Rinkeby
-
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Alchemy](https://RinkebyFaucet.com)
-- [Faucet Chainlink](https://faucets.chain.link/)
-- [Faucet Paradigm](https://faucet.paradigm.xyz/)
-- [Faucet Rinkeby](https://faucet.rinkeby.io/)
-
-#### Ropsten {#ropsten}
-
-Una red de prueba con prueba de trabajo. Esto significa que es la mejor representación comparable de Ethereum.
-
-##### Faucets Ropsten
-
-- [FaucETH](https://fauceth.komputing.org)(Faucet multicadena sin la necesidad de una cuenta social)
-- [Faucet Paradigm](https://faucet.paradigm.xyz/)
+- [Paradigm faucet](https://faucet.paradigm.xyz/)
+- [Coinbase Wallet Faucet | Optimism Goerli](https://coinbase.com/faucets/optimism-goerli-faucet)
 
 ## Redes privadas {#private-networks}
 
